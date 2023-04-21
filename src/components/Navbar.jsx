@@ -2,9 +2,10 @@ import React from 'react';
 import styled from 'styled-components';
 import { Search, ShoppingCartOutlined } from "@material-ui/icons";
 import { Badge } from '@material-ui/core';
+import {mobile} from '../responsive';
 
 const Container = styled.div`
-    
+  height: 60px;
 `;
 
 const Wrapper = styled.div`
@@ -24,6 +25,7 @@ const LanguageContainer = styled.div`
   font-size: 20px;
   margin-right: 30px;
   cursor: pointer;
+  ${mobile({display: "none"})}
 `;
 
 const SearchConatiner = styled.div`
@@ -32,10 +34,12 @@ const SearchConatiner = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
+  
 `;
 
 const Input = styled.input`
   border: none;
+  ${mobile({width: "50px"})}
 `;
 
 
